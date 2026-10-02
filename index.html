@@ -1,210 +1,378 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="tokyo-night">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bonjour chérie — une preuve de concept élégante et interactive." />
-  <title>Bonjour chérie</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexandre Osselin — Ingénieur logiciel · solution engineering · conseil · IA</title>
+<meta name="description" content="Alexandre Osselin, ingénieur logiciel chez Thales IAS (SAMP/T NG), orienté solution engineering, conseil et IA.">
+<link rel="canonical" href="https://osselinalexandre.github.io/alexandre_cv/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://osselinalexandre.github.io/alexandre_cv/">
+<meta property="og:title" content="Alexandre Osselin — Ingénieur logiciel">
+<meta property="og:description" content="Ingénieur logiciel, orienté solution engineering / conseil, IA.">
+<meta name="theme-color" content="#1a1b26">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%231a1b26'/><text x='50' y='66' font-size='52' text-anchor='middle' fill='%237aa2f7' font-family='monospace'>&gt;_</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="mesh" aria-hidden="true">
-    <div class="mesh__blob mesh__blob--1"></div>
-    <div class="mesh__blob mesh__blob--2"></div>
-    <div class="mesh__blob mesh__blob--3"></div>
-    <div class="mesh__noise"></div>
-  </div>
-  <div class="cursor-glow" aria-hidden="true"></div>
+<a class="skip" href="#main">Aller au contenu</a>
 
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar__brand">
-      <span class="sidebar__logo" aria-hidden="true">✦</span>
-      <span class="sidebar__title">Bonjour</span>
+<div class="mesh" aria-hidden="true">
+  <span class="mesh__blob mesh__blob--1"></span>
+  <span class="mesh__blob mesh__blob--2"></span>
+  <span class="mesh__blob mesh__blob--3"></span>
+  <span class="mesh__grid"></span>
+  <span class="mesh__noise"></span>
+</div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- waybar -->
+<header class="waybar glass">
+  <nav class="bar" aria-label="Navigation principale">
+    <ul class="ws">
+      <li><a href="#top" title="Accueil"><b>1</b><span>accueil</span></a></li>
+      <li><a href="#a-propos"><b>2</b><span>à-propos</span></a></li>
+      <li><a href="#expertises"><b>3</b><span>expertises</span></a></li>
+      <li><a href="#missions"><b>4</b><span>missions</span></a></li>
+      <li><a href="#stack"><b>5</b><span>stack</span></a></li>
+      <li><a href="#parcours"><b>6</b><span>parcours</span></a></li>
+      <li><a href="#contact"><b>7</b><span>contact</span></a></li>
+    </ul>
+    <span class="bar-center">alexandre@osselin</span>
+    <div class="bar-right">
+      <span class="bar-clock" id="clock" aria-hidden="true">--:--</span>
+      <button id="theme-btn" class="theme-btn" type="button" aria-label="Changer de thème (raccourci : T)" title="Changer de thème (T)">
+        <span class="swatch" aria-hidden="true"></span><span id="theme-name">Tokyo Night</span> <span class="kbd">T</span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero-text">
+      <p class="eyebrow"><span class="dot-live" aria-hidden="true"></span> ingénieur logiciel · solution engineering · conseil · IA</p>
+      <div class="term glass">
+        <div class="term-bar"><span class="term-title">foot — ~</span><span class="term-ws">[1]</span></div>
+        <div class="term-body">
+          <p class="prompt"><span class="c3">alexandre@osselin</span> <span class="c1">~</span> <span class="muted">$</span> <span id="typed-cmd"></span><span class="cursor" id="cmd-cursor" aria-hidden="true">▌</span></p>
+          <h1 id="hero-name" class="hero-name" aria-label="Alexandre Osselin"><span class="sr-fallback">Alexandre Osselin</span></h1>
+          <p class="hero-role" id="hero-role">Ingénieur logiciel chez <strong>Thales IAS</strong> — projet <strong>SAMP/T NG</strong>.<br>Profil à la fois <span class="c1">technique</span> et <span class="c2">orienté client</span>.</p>
+          <div class="hero-links" id="hero-links">
+            <a class="btn primary" href="mailto:alexandre.osselin@gmail.com">→ me contacter</a>
+            <a class="btn" href="https://linkedin.com/in/osselinalexandre" target="_blank" rel="noopener">linkedin ↗</a>
+            <a class="btn" href="https://github.com/OSSELINAlexandre" target="_blank" rel="noopener">github ↗</a>
+            <a class="btn ghost" href="#missions">voir les missions ↓</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <nav class="sidebar__nav" aria-label="Navigation principale">
-      <a href="#accueil" class="nav-item is-active" data-section="accueil">
-        <span class="nav-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-10.5z"/></svg>
-        </span>
-        <span class="nav-item__label">Accueil</span>
-      </a>
-      <a href="#capacites" class="nav-item" data-section="capacites">
-        <span class="nav-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.5"/></svg>
-        </span>
-        <span class="nav-item__label">Capacités</span>
-      </a>
-      <a href="#demo" class="nav-item" data-section="demo">
-        <span class="nav-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/><path d="M9 10l2 2 4-4"/></svg>
-        </span>
-        <span class="nav-item__label">Démo</span>
-      </a>
-      <a href="#design" class="nav-item" data-section="design">
-        <span class="nav-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9L12 3z"/><path d="M12 12 4 7.5M12 12l8-4.5M12 12v9"/></svg>
-        </span>
-        <span class="nav-item__label">Design</span>
-      </a>
-      <a href="#apropos" class="nav-item" data-section="apropos">
-        <span class="nav-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1.5-3.5 4-5 7-5s5.5 1.5 7 5"/></svg>
-        </span>
-        <span class="nav-item__label">À propos</span>
-      </a>
-    </nav>
+    <!-- tiled desktop mockup -->
+    <figure class="desktop glass" aria-label="Maquette d'un bureau Linux en tuiles (illustration)">
+      <div class="desk-bar">
+        <span class="desk-ws"><b>1</b> 2 3 4</span>
+        <span>osselin</span>
+        <span class="desk-r">▂▄▆ · 100%</span>
+      </div>
+      <div class="tiles">
+        <div class="tile-win tw-term">
+          <div class="tw-head">terminal</div>
+<pre class="tw-body"><span class="c3">~</span> $ whoami
+<span class="c1">alexandre-osselin</span>
+<span class="c3">~</span> $ cat role.txt
+ingénieur logiciel
+solution engineering
+conseil · IA
+<span class="c3">~</span> $ <span class="cursor">▌</span></pre>
+        </div>
+        <div class="tile-win tw-edit">
+          <div class="tw-head">nvim — bonjour.adb</div>
+<pre class="tw-body"><span class="ln">1</span> <span class="c2">with</span> Ada.Text_IO; <span class="c2">use</span> Ada.Text_IO;
+<span class="ln">2</span>
+<span class="ln">3</span> <span class="c2">procedure</span> <span class="c1">Bonjour</span> <span class="c2">is</span>
+<span class="ln">4</span> <span class="c2">begin</span>
+<span class="ln">5</span>    Put_Line (<span class="c3">"Alexandre Osselin"</span>);
+<span class="ln">6</span>    Put_Line (<span class="c3">"Code propre, testé,"</span>);
+<span class="ln">7</span>    Put_Line (<span class="c3">"documenté."</span>);
+<span class="ln">8</span> <span class="c2">end</span> <span class="c1">Bonjour</span>;</pre>
+        </div>
+        <div class="tile-win tw-stack">
+          <div class="tw-head">stack</div>
+<pre class="tw-body"><span class="muted">lang </span> Ada · Java · C · Python
+<span class="muted">tools</span> Linux · Git · Bash
+      Spring · Docker
+<span class="muted">meth </span> CI · Scrum · cycle en V
+<span class="muted">▁▂▃▄▅▆▇█</span> <span class="muted">illustratif</span></pre>
+        </div>
+      </div>
+      <figcaption class="muted small">illustration — bureau en tuiles</figcaption>
+    </figure>
+  </section>
 
-    <div class="sidebar__footer">
-      <div class="sidebar__status">
-        <span class="status-dot"></span>
-        <span>En ligne</span>
+  <!-- À PROPOS -->
+  <section id="a-propos" class="section reveal">
+    <h2 class="label"><span><span class="c1">~/</span>à-propos</span></h2>
+    <div class="grid about">
+      <div class="card glass">
+        <p>Ingénieur logiciel chez <strong>Thales IAS</strong> depuis janvier 2022, je contribue au projet <strong>SAMP/T NG</strong> : développement, tests et documentation, gestion de la qualité de code et résolution de faits techniques.</p>
+        <p>Mon parcours associe une formation en gestion (<strong>ESSEC</strong>) et en économie numérique (<strong>Université Paris Dauphine</strong>) à une spécialisation en ingénierie logicielle (<strong>OpenClassrooms</strong>, Java), complétée par le titre d'ingénieur du <strong>CNAM</strong> en Intelligence Artificielle et Optimisation (cours validés).</p>
+        <p>Je m'oriente vers le <strong>solution engineering</strong>, le <strong>conseil</strong> et l'<strong>IA</strong> : des rôles où la rigueur technique doit rencontrer la compréhension du besoin client.</p>
+      </div>
+      <div class="card glass kv">
+        <table class="plain">
+          <caption class="sr-only">Résumé</caption>
+          <tbody>
+            <tr><th scope="row">poste</th><td>Ingénieur logiciel — CDI</td></tr>
+            <tr><th scope="row">société</th><td>Thales IAS</td></tr>
+            <tr><th scope="row">projet</th><td>SAMP/T NG</td></tr>
+            <tr><th scope="row">depuis</th><td>janv. 2022</td></tr>
+            <tr><th scope="row">cap</th><td>solution engineering · conseil · IA</td></tr>
+            <tr><th scope="row">langages</th><td>Ada · Java · C · Python</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </aside>
+  </section>
 
-  <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
+  <!-- EXPERTISES -->
+  <section id="expertises" class="section reveal">
+    <h2 class="label"><span><span class="c1">~/</span>expertises</span></h2>
+    <div class="grid cards">
+      <article class="card glass spot">
+        <p class="card-k"><span class="c1">01</span> ingénierie</p>
+        <h3>Ingénierie logicielle</h3>
+        <p>Développement, tests et documentation sur un projet industriel exigeant (SAMP/T NG, Thales IAS).</p>
+        <ul class="tags"><li>Ada</li><li>C</li><li>Java</li><li>Python</li></ul>
+      </article>
+      <article class="card glass spot">
+        <p class="card-k"><span class="c2">02</span> qualité</p>
+        <h3>Qualité &amp; fiabilité</h3>
+        <p>Gestion de la qualité de code et résolution de faits techniques, avec les principes du Clean Code et l'intégration continue.</p>
+        <ul class="tags"><li>Clean Code</li><li>Intégration continue</li></ul>
+      </article>
+      <article class="card glass spot">
+        <p class="card-k"><span class="c3">03</span> méthodes</p>
+        <h3>Méthodes de projet</h3>
+        <p>Habitué aux cadres agiles comme aux cycles plus structurés.</p>
+        <ul class="tags"><li>Scrum</li><li>Jira</li><li>Cycle en V</li></ul>
+      </article>
+      <article class="card glass spot">
+        <p class="card-k"><span class="c1">04</span> double culture</p>
+        <h3>Technique &amp; business</h3>
+        <p>Formation en gestion (ESSEC) et en innovation / économie numérique (Dauphine, IREN), alliée à l'ingénierie logicielle.</p>
+        <ul class="tags"><li>ESSEC</li><li>Dauphine IREN</li></ul>
+      </article>
+      <article class="card glass spot">
+        <p class="card-k"><span class="c2">05</span> conseil</p>
+        <h3>Solution engineering</h3>
+        <p>Orientation vers des rôles qui relient la solution technique au besoin client : comprendre, concevoir, expliquer.</p>
+        <ul class="tags"><li>Conseil</li><li>Orientation client</li></ul>
+      </article>
+      <article class="card glass spot">
+        <p class="card-k"><span class="c3">06</span> ia</p>
+        <h3>IA &amp; optimisation</h3>
+        <p>Titre d'ingénieur CNAM, parcours Intelligence Artificielle et Optimisation — cours validés.</p>
+        <ul class="tags"><li>CNAM</li><li>IA</li><li>Optimisation</li></ul>
+      </article>
+    </div>
+  </section>
 
-  <main class="main" id="main">
-    <section class="section section--hero" id="accueil">
-      <div class="hero">
-        <p class="hero__eyebrow reveal">Preuve de concept · GitHub Pages</p>
-        <h1 class="hero__title" id="greeting" aria-label="Bonjour chérie">
-          <span class="hero__letters" id="heroLetters"></span>
-          <span class="hero__cursor" aria-hidden="true"></span>
-        </h1>
-        <p class="hero__subtitle reveal">
-          Une page vivante — typographie soignée, mouvements doux,<br />
-          et une navigation digne d’un produit premium.
-        </p>
-        <div class="hero__actions reveal">
-          <a href="#capacites" class="btn btn--primary">
-            Découvrir
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="#demo" class="btn btn--ghost">Essayer la démo</a>
+  <!-- MISSIONS -->
+  <section id="missions" class="section reveal">
+    <h2 class="label"><span><span class="c1">~/</span>missions</span></h2>
+
+    <article class="feature glass" id="samp">
+      <div class="feature-head">
+        <div>
+          <p class="card-k"><span class="c1">mission</span> · Thales IAS · janv. 2022 — présent</p>
+          <h3 class="feature-title">SAMP/T NG</h3>
+          <p class="feature-sub">Système Sol-Air Moyenne Portée Terrestre – Nouvelle Génération</p>
+        </div>
+        <span class="tag big">CDI · Ingénieur logiciel</span>
+      </div>
+      <p class="feature-desc">Système de défense sol-air de moyenne portée, de nouvelle génération, sur lequel travaille Thales. J'y interviens en tant qu'ingénieur logiciel.</p>
+
+      <div class="duo" aria-label="Double posture : ingénieur et consultant">
+        <div class="pane pane-eng">
+          <p class="pane-h"><span class="c1">●</span> ingénieur</p>
+<pre class="pane-log" aria-hidden="true"><span class="c3">$</span> make build      <span class="c3">ok</span>
+<span class="c3">$</span> make test       <span class="c3">ok</span>
+<span class="c3">$</span> make doc        <span class="c3">ok</span></pre>
+          <ul class="list">
+            <li>Développement</li>
+            <li>Tests</li>
+            <li>Documentation</li>
+            <li>Gestion de la qualité de code</li>
+            <li>Résolution de faits techniques</li>
+          </ul>
+        </div>
+        <div class="bridge" aria-hidden="true">
+          <span class="bridge-line"></span>
+          <span class="bridge-node">∩</span>
+          <span class="bridge-line"></span>
+        </div>
+        <div class="pane pane-con">
+          <p class="pane-h"><span class="c2">●</span> consultant</p>
+<pre class="pane-log" aria-hidden="true"><span class="c2">›</span> besoin        → compris
+<span class="c2">›</span> solution      → expliquée
+<span class="c2">›</span> livrable      → documenté</pre>
+          <ul class="list">
+            <li>Comprendre le besoin derrière la demande</li>
+            <li>Rendre la technique lisible et documentée</li>
+            <li>Relier la solution aux enjeux du client</li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <section class="section" id="capacites">
-      <header class="section__header reveal">
-        <p class="section__eyebrow">Capacités</p>
-        <h2 class="section__title">Ce que l’IA peut offrir</h2>
-        <p class="section__lead">Des gestes précis, une présence discrète, une esthétique qui respire.</p>
-      </header>
-      <div class="cards">
-        <article class="card reveal" style="--i:0">
-          <div class="card__icon">✦</div>
-          <h3 class="card__title">Écriture élégante</h3>
-          <p class="card__text">Textes clairs, ton juste, rythme soigné — du premier mot à la dernière ponctuation.</p>
-        </article>
-        <article class="card reveal" style="--i:1">
-          <div class="card__icon">◈</div>
-          <h3 class="card__title">Interfaces vivantes</h3>
-          <p class="card__text">Animations fluides, micro-interactions et transitions qui donnent de l’âme au produit.</p>
-        </article>
-        <article class="card reveal" style="--i:2">
-          <div class="card__icon">⬡</div>
-          <h3 class="card__title">Prototypes rapides</h3>
-          <p class="card__text">Du concept à une page déployable en quelques minutes, sans friction ni build complexe.</p>
-        </article>
-        <article class="card reveal" style="--i:3">
-          <div class="card__icon">◎</div>
-          <h3 class="card__title">Détail &amp; contraste</h3>
-          <p class="card__text">Glassmorphism, profondeur et hiérarchie visuelle pensés pour un confort de lecture.</p>
-        </article>
+      <blockquote class="message">
+        <p><span class="c1">&gt;</span> Dans une transformation numérique, il faut des profils à la fois <strong class="c1">techniques</strong> et <strong class="c2">orientés client</strong>.</p>
+      </blockquote>
+    </article>
+
+    <h3 class="sublabel">études de cas &amp; projets</h3>
+    <div class="grid cards">
+      <article class="card glass spot">
+        <p class="card-k"><span class="c2">●</span> cnam · janv. 2024 — présent</p>
+        <h3>Titre d'ingénieur CNAM</h3>
+        <p>Cours du soir, parcours Intelligence Artificielle et Optimisation — cours validés.</p>
+      </article>
+      <article class="card glass spot">
+        <p class="card-k"><span class="c2">●</span> linux · déc. 2024</p>
+        <h3>Linux Primitives</h3>
+        <p>Primitives Linux pour la communication inter/intra-processus.</p>
+      </article>
+      <article class="card glass spot">
+        <p class="card-k"><span class="c2">●</span> asm · déc. 2023</p>
+        <h3>Projet Assembleur</h3>
+        <p>Bases de l'assembleur.</p>
+      </article>
+      <article class="card glass spot">
+        <p class="card-k"><span class="c2">●</span> java · sept. — déc. 2020</p>
+        <h3>TP CentraleSupélec</h3>
+        <p>Travaux pratiques pour apprendre Java.</p>
+      </article>
+      <article class="card glass placeholder">
+        <p class="card-k"><span class="muted">○</span> résolution de problème</p>
+        <h3>Études de cas</h3>
+        <p class="muted">À venir.</p>
+        <p class="muted mono small">[░░░░░░░░░░░░] en préparation</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="section reveal">
+    <h2 class="label"><span><span class="c1">~/</span>stack</span></h2>
+    <div class="grid stack">
+      <div class="card glass">
+        <table class="plain">
+          <caption class="sr-only">Technologies</caption>
+          <thead><tr><th scope="col">catégorie</th><th scope="col">éléments</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">langages</th><td><ul class="tags"><li>Ada</li><li>Java</li><li>C</li><li>Python</li></ul></td></tr>
+            <tr><th scope="row">outils</th><td><ul class="tags"><li>Linux</li><li>Git</li><li>Bash</li><li>Spring</li><li>Docker</li></ul></td></tr>
+            <tr><th scope="row">concepts</th><td><ul class="tags"><li>Intégration continue</li><li>Agile (Scrum + Jira)</li><li>Cycle en V</li><li>Clean Code</li></ul></td></tr>
+          </tbody>
+        </table>
       </div>
-    </section>
-
-    <section class="section" id="demo">
-      <header class="section__header reveal">
-        <p class="section__eyebrow">Démo interactive</p>
-        <h2 class="section__title">Touchez, jouez, ressentez</h2>
-        <p class="section__lead">Un petit atelier pour montrer que la page réagit — simplement, avec grâce.</p>
-      </header>
-      <div class="demo reveal">
-        <div class="demo__panel">
-          <label class="demo__label" for="moodSelect">Choisissez une ambiance</label>
-          <div class="demo__row">
-            <select id="moodSelect" class="demo__select">
-              <option value="rose">Rose tendre</option>
-              <option value="violet">Violet nocturne</option>
-              <option value="cyan">Cyan électrique</option>
-              <option value="or">Or doux</option>
-            </select>
-            <button type="button" class="btn btn--primary" id="moodApply">Appliquer</button>
-          </div>
-          <div class="demo__preview" id="moodPreview">
-            <span class="demo__preview-label">Aperçu</span>
-            <p class="demo__preview-text" id="moodText">Bonjour chérie — l’accent change avec vous.</p>
-          </div>
-          <div class="demo__sparkles" id="sparkles" aria-hidden="true"></div>
+      <div class="card glass btop">
+        <p class="card-k"><span class="c1">btop</span> · stack</p>
+        <div class="bars" role="list">
+          <div class="bar-row" role="listitem"><span>Ada</span><span class="cbar" data-v="10"></span></div>
+          <div class="bar-row" role="listitem"><span>Java</span><span class="cbar" data-v="10"></span></div>
+          <div class="bar-row" role="listitem"><span>C</span><span class="cbar" data-v="10"></span></div>
+          <div class="bar-row" role="listitem"><span>Python</span><span class="cbar" data-v="10"></span></div>
+          <div class="bar-row" role="listitem"><span>Linux</span><span class="cbar" data-v="10"></span></div>
+          <div class="bar-row" role="listitem"><span>Git</span><span class="cbar" data-v="10"></span></div>
+          <div class="bar-row" role="listitem"><span>Docker</span><span class="cbar" data-v="10"></span></div>
         </div>
-        <div class="demo__counter">
-          <p class="demo__counter-label">Clics magiques</p>
-          <button type="button" class="demo__orb" id="orbBtn" aria-label="Ajouter un clic magique">
-            <span class="demo__orb-count" id="orbCount">0</span>
-          </button>
-          <p class="demo__hint">Cliquez l’orbe — elle pulse et compte.</p>
-        </div>
+        <p class="muted small">Visualisation purement illustrative, pas une mesure de niveau.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="design">
-      <header class="section__header reveal">
-        <p class="section__eyebrow">Design</p>
-        <h2 class="section__title">Le craft avant tout</h2>
-        <p class="section__lead">La vitesse n’excuse pas la médiocrité — elle exige plus de soin.</p>
-      </header>
-      <div class="design-grid reveal">
-        <div class="design-note">
-          <h3>Typographie</h3>
-          <p><strong>Instrument Serif</strong> pour le titre d’accueil — élégance éditoriale. <strong>Outfit</strong> pour l’interface — nette, moderne, lisible.</p>
-        </div>
-        <div class="design-note">
-          <h3>Mouvement</h3>
-          <p>Apparitions en cascade, halo de curseur, mesh animé en fond. Respect de <code>prefers-reduced-motion</code>.</p>
-        </div>
-        <div class="design-note">
-          <h3>Profondeur</h3>
-          <p>Verre flou, bordures lumineuses, ombres douces — une hiérarchie qui guide sans crier.</p>
-        </div>
-        <div class="design-note">
-          <h3>Déploiement</h3>
-          <p>HTML / CSS / JS purs. Un dossier, un push, GitHub Pages. Aucun bundler requis.</p>
-        </div>
+  <!-- PARCOURS -->
+  <section id="parcours" class="section reveal">
+    <h2 class="label"><span><span class="c1">~/</span>parcours</span></h2>
+
+    <div class="card glass gantt-card">
+      <p class="card-k"><span class="c1">timeline</span> · 2013 → 2026</p>
+      <div class="gantt-wrap"><pre class="gantt" id="gantt" aria-hidden="true"></pre></div>
+      <p class="muted small">Chaque cellule = une année. Construit à partir des dates du CV.</p>
+      <div class="spark-row">
+        <pre class="spark" id="spark" aria-hidden="true"></pre>
+        <p class="muted small">Nombre d'activités (études, poste, projets) menées en parallèle chaque année — dérivé des dates du CV.</p>
       </div>
-    </section>
+    </div>
 
-    <section class="section section--about" id="apropos">
-      <header class="section__header reveal">
-        <p class="section__eyebrow">À propos</p>
-        <h2 class="section__title">Une page, une intention</h2>
-        <p class="section__lead">
-          « Bonjour chérie » est une preuve de concept visuelle : montrer qu’une page statique
-          peut se sentir vivante, premium, et digne d’être partagée.
-        </p>
-      </header>
-      <div class="about-card reveal">
-        <p>
-          Conçue pour GitHub Pages · thème sombre · accents dynamiques ·
-          navigation latérale inspirée de Cursor et Twitter.
-        </p>
-        <a href="#accueil" class="btn btn--ghost">Retour à l’accueil</a>
+    <div class="grid two">
+      <div class="card glass">
+        <table class="plain">
+          <caption class="card-k cap">expérience</caption>
+          <thead><tr><th scope="col">période</th><th scope="col">poste</th></tr></thead>
+          <tbody>
+            <tr><td class="date">janv. 2022 — présent</td><td><strong>Ingénieur logiciel</strong>, Thales IAS (CDI)<br><span class="muted">SAMP/T NG — développement, tests, documentation, qualité de code, résolution de faits techniques</span></td></tr>
+          </tbody>
+        </table>
       </div>
-    </section>
+      <div class="card glass">
+        <table class="plain">
+          <caption class="card-k cap">formation</caption>
+          <thead><tr><th scope="col">période</th><th scope="col">diplôme</th></tr></thead>
+          <tbody>
+            <tr><td class="date">janv. 2024 — présent</td><td><strong>CNAM</strong> — Titre d'ingénieur, parcours IA et Optimisation <span class="muted">(cours validés)</span></td></tr>
+            <tr><td class="date">janv. 2021 — janv. 2022</td><td><strong>OpenClassrooms</strong> — Diplôme niveau 6 (bac+3/4), Ingénierie Java</td></tr>
+            <tr><td class="date">sept. 2018 — sept. 2020</td><td><strong>Université Paris Dauphine</strong> — Master Innovation, Réseaux, Économie Numérique (IREN)</td></tr>
+            <tr><td class="date">sept. 2013 — sept. 2018</td><td><strong>ESSEC</strong> — Bachelor in Business Administration</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="grid two">
+      <div class="card glass"><p class="card-k"><span class="c3">#</span> lecture</p><p>Classiques, littérature, philosophie.</p></div>
+      <div class="card glass"><p class="card-k"><span class="c3">#</span> sport</p><p>Boxe anglaise, course à pied.</p></div>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <p>Bonjour chérie · POC · <span id="year"></span></p>
-    </footer>
-  </main>
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <h2 class="label"><span><span class="c1">~/</span>contact</span></h2>
+    <div class="card glass contact">
+      <p class="prompt"><span class="c3">~</span> <span class="muted">$</span> cat contact.txt</p>
+      <table class="plain">
+        <caption class="sr-only">Coordonnées</caption>
+        <tbody>
+          <tr><th scope="row">email</th><td><a href="mailto:alexandre.osselin@gmail.com">alexandre.osselin@gmail.com</a></td></tr>
+          <tr><th scope="row">téléphone</th><td><a href="tel:+33767259055">07 67 25 90 55</a></td></tr>
+          <tr><th scope="row">linkedin</th><td><a href="https://linkedin.com/in/osselinalexandre" target="_blank" rel="noopener">linkedin.com/in/osselinalexandre</a></td></tr>
+          <tr><th scope="row">github</th><td><a href="https://github.com/OSSELINAlexandre" target="_blank" rel="noopener">github.com/OSSELINAlexandre</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-  <script src="assets/js/main.js"></script>
+  <!-- THEMES -->
+  <section id="themes" class="section reveal">
+    <h2 class="label"><span><span class="c1">~/</span>thèmes</span></h2>
+    <div class="card glass themes-card">
+      <p>Choisissez un thème : tout le site change de couleurs. Ou appuyez sur <span class="kbd">T</span> pour les faire défiler.</p>
+      <ul class="theme-list" id="theme-list"></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year">2026</span> Alexandre Osselin <span class="muted">·</span> site statique <span class="muted">·</span> style inspiré d'Omarchy <span class="muted">·</span> <span class="kbd">T</span> thème</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
